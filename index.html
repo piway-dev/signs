@@ -83,12 +83,12 @@
                 <div class="col-lg-4 col-md-4">
                     <label>Número de vizinhos</label>
                     <div class="input-group mb-3">
-                        <button type="button" class="btn btn-outline-secondary" onclick="changeStep(-1)">
-                            <i class="fa fa-minus"></i>
-                        </button>
-                        <input type="number" maxlength="2" min="0" max="18" value="6" class="form-control" placeholder="Digite número de vizinhos" id="inputNumberOfNeighbors">
                         <button type="button" class="btn btn-outline-secondary" onclick="changeStep(1)">
                             <i class="fa fa-plus"></i>
+                        </button>
+                        <input type="number" maxlength="2" min="0" max="18" value="6" class="form-control" placeholder="Digite número de vizinhos" id="inputNumberOfNeighbors">
+                        <button type="button" class="btn btn-outline-secondary" onclick="changeStep(-1)">
+                            <i class="fa fa-minus"></i>
                         </button>
                     </div>
                 </div>
@@ -176,14 +176,14 @@
             }
 
             let message = `
-                🚨INICIO DA SESSÃO! 🚨
+🚨INICIO DA SESSÃO! 🚨
 
-                🎰 Roleta: ${rouletteName.value}
+🎰 Roleta: ${rouletteName.value}
 
-                ⏳ Aguardando confirmação...
-                🔄 Analisando padrões em tempo real...
+⏳ Aguardando confirmação...
+🔄 Analisando padrões em tempo real...
 
-                💡 Fique pronto! O sinal pode sair a qualquer momento! 🎯🔥
+💡 Fique pronto! O sinal pode sair a qualquer momento! 🎯🔥
             `;
 
             copyToClipboard(message);
@@ -219,14 +219,14 @@
             }
 
             let message = `
-                🔥 SINAL CONFIRMADO🔥
+🔥 SINAL CONFIRMADO🔥
 
-                🎰 Roleta: ${rouletteName.value}
+🎰 Roleta: ${rouletteName.value}
 
-                🎲 Número para apostar:* ${targetNumber.value} com ${numberOfNeighbors.value} Vizinhos 
-                ⚡ Ação após número: ${signalNumber.value}
+🎲 Número para apostar: ${targetNumber.value} com ${numberOfNeighbors.value} Vizinhos 
+⚡ Ação após número: ${signalNumber.value}
 
-                🔔 Fique atento e aposte com responsabilidade!
+🔔 Fique atento e aposte com responsabilidade!
             `;
 
             copyToClipboard(message);
